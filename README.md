@@ -1,7 +1,7 @@
 
 ## Dockerization
 
-2. **Write Dockerfile**:
+1. **Write Dockerfile**:
     ```Dockerfile
     # Use an official Python runtime as a parent image
     FROM python:3.9-slim
@@ -24,11 +24,11 @@
     # Run app.py when the container launches
     CMD ["python", "app.py"]
     ```
-3. **Build the Docker image**:
+2. **Build the Docker image**:
     ```bash
     docker build -t wisecow-app .
     ```
-4. **Test the Docker image locally**:
+3. **Test the Docker image locally**:
     ```bash
     docker run -p 8080:80 wisecow-app
     ```
